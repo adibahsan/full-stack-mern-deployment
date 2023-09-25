@@ -1,8 +1,6 @@
 version: '3'
 services:
-  my_container:
-    image: amazonlinux:2
-    container_name: amazon-linux-2-container
-    volumes:
-      - /d/Docker/AmzLnx:/
-    command: tail -f /dev/null
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
